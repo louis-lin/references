@@ -1,6 +1,6 @@
 /* Adjust line spacing */
 p {
-    line-height: 1.5;  /* Adjust this value as needed */
+    line-height: 1.0;  /* Adjust this value as needed */
 }
 
 /* Adjust spacing between list items */
@@ -8,4 +8,10 @@ li {
     margin-bottom: 0.5em;  /* Adjust this value as needed */
 }
 
-/* You can add more custom styles here */
+/* Reduce gap between sidebar items */
+.wy-menu-vertical li {
+    margin-bottom: 0;
+}
+.wy-menu-vertical li.current {
+    margin-bottom: 0;
+}

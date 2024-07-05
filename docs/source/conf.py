@@ -1,10 +1,10 @@
 # Configuration file for the Sphinx documentation builder.
 
 project = 'Git Commands Guide'
-copyright = '2023, Your Name'
-author = 'Your Name'
+copyright = '2023, Louis Lin'
+author = 'Louis Lin'
 
-# The full version, including alpha/beta/rc tags
+# The full version
 release = '0.1'
 
 # Add any Sphinx extension module names here, as strings.
@@ -23,13 +23,14 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.
-html_theme = 'press'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'show_sidebar_index': True,  # This should show the full tree
+    'show_sidebar_index': True,
+    'show_navbar_depth': 2,  # This should show the full tree
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

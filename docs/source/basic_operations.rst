@@ -1,114 +1,103 @@
 Basic Git Operations
 ====================
 
-This section covers the fundamental Git commands and operations you'll use regularly.
-
-Initializing and Cloning Repositories
--------------------------------------
+This section covers the fundamental Git commands you'll use in your day-to-day work.
 
 .. _git-init:
 
 git init
-^^^^^^^^
+--------
 
-Initializes a new Git repository:
+Initializes a new Git repository.
 
 .. code-block:: bash
 
    git init
 
-.. _git-clone:
-
-git clone
-^^^^^^^^^
-
-Creates a copy of an existing repository:
-
-.. code-block:: bash
-
-   git clone <repository-url>
-
-Making Changes
---------------
-
 .. _git-add:
 
 git add
-^^^^^^^
+-------
 
-Adds changes to the staging area:
+Adds changes in the working directory to the staging area.
 
 .. code-block:: bash
 
    git add <file>
-   # or to add all changes:
+
+To add all changes:
+
+.. code-block:: bash
+
    git add .
 
 .. _git-commit:
 
 git commit
-^^^^^^^^^^
+----------
 
-Records the changes in the repository:
+Records the changes in the repository.
 
 .. code-block:: bash
 
    git commit -m "Your commit message"
 
-Working with Remotes
---------------------
+.. _git-status:
 
-.. _git-push:
+git status
+----------
 
-git push
-^^^^^^^^
-
-Uploads your local commits to a remote repository:
+Shows the working tree status.
 
 .. code-block:: bash
 
-   git push -u origin main
+   git status
 
-.. _git-pull:
+.. _git-log:
 
-git pull
-^^^^^^^^
+git log
+-------
 
-Fetches changes from a remote repository and merges them into your current branch:
-
-.. code-block:: bash
-
-   git pull origin main
-
-Using .gitignore
-----------------
-
-The ``.gitignore`` file specifies intentionally untracked files that Git should ignore. 
-
-Create a .gitignore file:
+Shows commit logs.
 
 .. code-block:: bash
 
-   touch .gitignore
+   git log
 
-Common entries in .gitignore:
+.. _git-diff:
 
-.. code-block:: text
+git diff
+--------
 
-   # Ignore build artifacts
-   build/
-   dist/
+Shows changes between commits, commit and working tree, etc.
 
-   # Ignore temporary files
-   *.tmp
-   *.log
+.. code-block:: bash
 
-   # Ignore sensitive information
-   config.ini
-   secrets.json
+   git diff
 
-   # Ignore system files
-   .DS_Store
-   Thumbs.db
+.. _git-stash:
 
-Remember to commit your ``.gitignore`` file to the repository.
+git stash
+---------
+
+Stashes the changes in a dirty working directory away.
+
+Save changes to a stash:
+
+.. code-block:: bash
+
+   git stash
+
+Apply stashed changes:
+
+.. code-block:: bash
+
+   git stash apply
+
+.. _git-stash-pop:
+
+Pop stashed changes:
+
+.. code-block:: bash
+
+   git stash pop

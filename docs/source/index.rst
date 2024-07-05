@@ -7,9 +7,8 @@ Welcome to Git Commands Guide
 
    introduction
    basic_operations
-   branching_and_merging
+   branch_operations
    remote_operations
-   inspecting_and_comparing
    troubleshooting
 
 Indices and tables

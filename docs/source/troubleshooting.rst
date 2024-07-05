@@ -57,6 +57,7 @@ If you encounter "src refspec main does not match any":
 
 Offline Documentation Compilation
 ---------------------------------
+.. _offline-compilation:
 
 For Windows (using make.bat):
 
@@ -71,4 +72,3 @@ For Unix-based systems (using Makefile):
    make html
 
 If you encounter issues with make.bat, ensure you're running it from the correct directory and that you have Sphinx installed and accessible from your command line.
-
