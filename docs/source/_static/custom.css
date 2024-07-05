@@ -1,0 +1,11 @@
+/* Adjust line spacing */
+p {
+    line-height: 1.5;  /* Adjust this value as needed */
+}
+
+/* Adjust spacing between list items */
+li {
+    margin-bottom: 0.5em;  /* Adjust this value as needed */
+}
+
+/* You can add more custom styles here */
